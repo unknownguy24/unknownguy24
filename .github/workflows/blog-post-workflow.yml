@@ -1,14 +1,23 @@
-name: Latest blog post workflow
-on: 
-    schedule:
-        - cron: '0 * * * *'
-jobs: 
-    update-readme-with-blog: 
-        name: Update this repo's README with latest blog posts
-        runs-on: ubuntu-latest
-        steps: 
-            - uses: actions/checkout@v2
-            - uses: gautamkrishnar/blog-post-workflow@master
-              with: 
-                max_post_count: "4"
-                feed_list: "https://medium.com/feed/@siddharthnilakhe"
+name: Latest blog posts workflow
+on:
+  schedule:
+    - cron: '0 * * * *' # This will run the workflow every hour
+
+jobs:
+  update-readme-with-blog:
+    name: Update this repo's README with latest blog posts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Fetch Blog Posts
+        uses: gautamkrishnar/blog-post-workflow@master
+        with: 
+          max_post_count: 5
+          feed_list: "https://medium.com/feed/@siddharthnilakhe"
+      - name: Update README
+        uses: mikeal/publish-to-github-action@master
+        with:
+          repository: username/repository
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: ./README.md
+          message: "Updated README with the latest blog posts"
