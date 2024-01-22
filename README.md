@@ -19,6 +19,10 @@
 
 ### Blogs posts
 <!-- BLOG-POST-LIST:START -->
+- [Five Essential Text Summarization Techniques Using LangChain and OpenAI](https://medium.com/@siddharthnilakhe/five-essential-text-summarization-techniques-using-langchain-and-openai-73372a0cce4b?source=rss-4673a276ac23------2)
+- [Reinforcement Learning — Understanding Markov Decision Processes and Optimal Strategies](https://medium.com/@siddharthnilakhe/reinforcement-learning-understanding-markov-decision-processes-and-optimal-strategies-29a64615b563?source=rss-4673a276ac23------2)
+- [AIC, BIC, HQIC, Jarque-Bera Test and Heteroskedasticity Test](https://medium.com/@siddharthnilakhe/aic-bic-hqic-jarque-bera-test-and-heteroskedasticity-test-4ef7e1fa19af?source=rss-4673a276ac23------2)
+- [Trading by the Stars: My Journey with Chandrayaan 3](https://medium.com/@siddharthnilakhe/trading-by-the-stars-my-journey-with-chandrayaan-3-54af2787294b?source=rss-4673a276ac23------2)
 <!-- BLOG-POST-LIST:END -->
 
 
